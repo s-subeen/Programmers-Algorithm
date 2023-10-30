@@ -1,11 +1,12 @@
 class Solution {
     fun solution(n: Int): Int {
-        val str: String = n.toString()
-        val arr = str.toCharArray()
+        var list = ArrayList<Int>()
         var sum: Int = 0
+        var num = n
         
-        for (item in arr) {
-            sum += item.toString().toInt()
+        while (num > 0) {
+            sum += num % 10
+            num /= 10
         }
 
         return sum
