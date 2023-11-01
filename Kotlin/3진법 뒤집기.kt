@@ -16,8 +16,6 @@ class Solution {
             decimal += (3.0).pow(i) * number
         }
         
-        println("${n.toString(2)}")
-        
         return decimal.toInt()
     }
 }
